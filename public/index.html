@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Ingressantes</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .formulario-container {
+            border: 1px solid #3498db;
+            border-radius: 10px;
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+            text-align: center;
+            background: linear-gradient(to bottom, #3498db 10%, transparent 10%);
+            margin-top: 10px;
+        }
+        
+
+        h1 {
+            margin: 0px; /* Ajuste na margem do elemento h1 */
+            font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+            color: white; /* Altera a cor do texto para branco */
+            padding: 5px; /* Adiciona um espaçamento interno ao redor do texto */
+            border-radius: px; /* Adiciona borda arredondada ao h1 */
+        }
+
+        form {
+            text-align: left;
+            /* Ajusta o alinhamento do texto para a esquerda */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            text-align: left;
+            /* Alinha o texto do rótulo para a esquerda */
+        }
+
+        select,
+        input {
+            width: 100%;
+            /* Faz com que os campos de entrada e dropdown ocupem 100% da largura disponível */
+            padding: 5px;
+            margin-bottom: 1px;
+            /* Adiciona um espaço entre os campos */
+        }
+
+        input[type="text"] {
+            width: calc(100% - 12px);
+            /* Diminui o tamanho da entrada de texto */
+        }
+
+        button {
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        .gravar {
+            background-color: #2ecc71;
+            color: white;
+        }
+
+        .voltar {
+            background-color: #f1c40f;
+            color: white;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="formulario-container">
+        <header>
+            <h1>Cadastro de Ingressantes</h1>
+        </header>
+        <div id="root"></div>
+    </div>
+
+    <script>
+        const root = document.getElementById('root');
+
+        const App = () => {
+            // O código React aqui
+            // ...
+
+            return (
+                <FormularioCadastro />
+            );
+        };
+
+        ReactDOM.render(<App />, root);
+    </script>
+</body>
+
+</html>
